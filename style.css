@@ -4,26 +4,31 @@
   box-sizing: border-box;
 }
 
-
 body,
 html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+
   /* overflow-x: hidden; */
 }
 
 li {
   list-style: none;
 }
-header {
-  background-color: #262626;
-  top: 0;
-}
 
-li {
-  list-style: none;
+header {
+  top: 0;
+  background-color: #3c3a39;
+  display: flex;
+  position: fixed;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  /* max-width: 100%; */
 }
 
 a {
@@ -48,7 +53,9 @@ a {
   padding-top: 108px;
 }
 
-.nav-item , .nav-item-about , .nav-item-contact {
+.nav-item,
+.nav-item-about,
+.nav-item-contact {
   display: block;
   border-bottom: 2px solid grey;
   padding: 12px;
@@ -88,7 +95,7 @@ a {
   background-color: white;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -105,7 +112,8 @@ a {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .navbar-logo.active{
+
+  .navbar-logo.active {
     display: none;
   }
 
@@ -121,7 +129,6 @@ a {
   }
 
   .nav-item {
-
     font-size: 32px;
   }
 
@@ -129,14 +136,13 @@ a {
     left: 0;
     top: 0;
     width: 100%;
-    background-color:#3c3a39;
-    font-family: 'Inter' , sans-serif;
+    background-color: #3c3a39;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     display: flex;
-    
   }
-
 }
+
 body {
   background-color: #1c1a19;
   width: 100%;
@@ -147,17 +153,6 @@ body {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 120%;
-}
-
-header {
-  background-color: #3c3a39;
-  display: flex;
-  position: fixed;
-  color: white;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  /* max-width: 100%; */
 }
 
 .navbar-logo {
@@ -766,21 +761,21 @@ footer {
 @media screen and (min-width: 789px) {
   body,
   html {
-  width: 100%;
-  height: 100%;
-  
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
     overflow-x: hidden;
   }
-  header{
+
+  header {
     width: 98.8vw;
     margin: 0 auto;
-
   }
 
-  .navbar{
+  .navbar {
     display: none;
   }
+
   .menu {
     display: none;
   }
@@ -805,7 +800,7 @@ footer {
     color: white;
   }
 
-.navbar-logo {
+  .navbar-logo {
     margin-left: 151px;
     margin-top: 26px;
     margin-bottom: 26px;
